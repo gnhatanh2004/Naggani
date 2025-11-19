@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thám tử Heirlock</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- === MENU CHÍNH === -->
+  <div id="menu">
+    <h1>Thám tử Heirlock</h1>
+    <div class="menu-buttons">
+      <button id="continueBtn">Tiếp tục</button>
+      <button id="restartBtn">Chơi mới</button>
+      <button id="endingsBtn">Endings</button>
+    </div>
+  </div>
+
+  <!-- === GAME === -->
+  <div id="game" style="display:none;">
+    <img id="background" src="asset/backgrounds/vanphong.jpg" alt="Background">
+    <img id="character" src="asset/characters/Heirlock.png" alt="Nhân vật">
+
+    <div id="dialogueBox">
+      <div id="nameBox">Narrator</div>
+      <p id="text"></p>
+    </div>
+
+    <div id="choiceBox" style="display:none;"></div>
+  </div>
+
+  <!-- === ENDINGS OVERLAY === -->
+  <div id="endingGallery" style="display:none;">
+    <div class="ending-overlay">
+      <h2>Endings</h2>
+      <div id="endingList" class="ending-list"></div>
+      <button id="backToMenuFromEndings" class="ending-back-btn">Quay lại</button>
+    </div>
+  </div>
+  <!-- === POPUP ENDING === -->
+  <div id="endPopup" class="end-popup" style="display:none;">
+    <div class="popup-content">
+      <h2>Hoàn thành Ending!</h2>
+      <button id="popupBackMenu" class="choiceBtn">Về menu chính</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+  <audio id="bgMusic" src="asset/bgm/bgm.mp3" loop></audio>
+  <audio id="endMusic" src="asset/bgm/endbgm.mp3"></audio>
+</body>
+</html>
