@@ -1,0 +1,26 @@
+{
+  "name": "naggani",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Naggani's game",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "com.game.naggani",
+    "productName": "NagganiGame",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": "nsis"
+    }
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "^30.0.0",
+    "electron-builder": "^24.13.3"
+  }
+}
