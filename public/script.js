@@ -14,9 +14,10 @@ const ENDINGS_KEY = "vn_endings_unlocked";
 
 // === ENDINGS ===
 const endings = {
-  A: { name: "Bad end: Lần này anh đoán sai rồi.", unlocked: false },
-  B: { name: "uhhuoiyoiuttutuifvryu", unlocked: false },
+  A: { name: "Lần này anh đoán sai rồi!", unlocked: false },
+  B: { name: "Kiếp sau khao tôi cafe sữa nhé!", unlocked: false },
   C: { name: "Ending C - Route C", unlocked: false },
+  D: { name: "iuyoiuaeyriuovyioutoy", unlocked: false },
 };
 
 // === SCENES ===
